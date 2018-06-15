@@ -1,0 +1,520 @@
+.wrapper{
+    float:left;
+    width:500px;
+    height:550px;
+  /*  background: grey;*/
+    
+}
+
+.actionField{
+    height: 500px;
+    width: 500px;
+    float:left;
+    position: relative;
+    background-color: #81BEF7;
+}
+
+#menu{
+float:left;
+width:500px;
+height:25px;
+    padding-top: 3px;
+    margin-right: 200px;
+background: #BEF781;
+}
+
+#arrLength{
+    float:left;
+    margin-left: 5px;
+}
+
+#algorithm{
+    float:left;
+     margin-left: 5px;
+}
+#numbers{
+   width: 210px;
+    float:left;
+     margin-left: 5px;
+}
+#startButon{
+    float:left;
+     margin-left: 5px;
+    
+}
+#stopButon{
+    float: left;
+     margin-left: 5px;
+}
+
+#S, #buttonHome{
+    display: block;
+    float:left;
+	text-align:  center;
+	color: black;
+	font-size: 14px;
+    border-radius: 6px;
+    margin-left:5px;
+    line-height: 20px;
+	width: 50px;
+    height: 20px;
+    background-color: #FFBF00;
+    
+	text-decoration: none;	
+    
+}
+
+#S:hover{
+    color:white;
+    background:blue;
+    cursor:pointer;
+}
+
+.moveAble{
+    
+    float:left;
+    position: absolute;
+    width:23px;
+    height:23px;
+    
+    background-color: darkorange;
+    color:white;
+    font-size: 12px;
+    text-align: center;
+vertical-align: middle;
+line-height: 23px;
+  
+    
+  
+}
+
+#moveAble1{
+top:150px;
+left:125px;
+    visibility: hidden;
+}
+
+#moveAble2{
+top:150px;
+left:150px;
+    visibility: hidden;
+    
+}
+
+#moveAble3{
+top:150px;
+left:175px;
+        visibility: hidden;
+}
+#moveAble4{
+top:150px;
+left:200px;
+    visibility: hidden;
+}
+
+#moveAble5{
+top:150px;
+left:225px;
+        visibility: hidden;
+}
+
+#moveAble6{
+top:150px;
+left:250px;
+    visibility: hidden;
+}
+
+#moveAble7{
+top:150px;
+left:275px;
+    visibility: hidden;
+}
+
+#moveAble8{
+top:150px;
+left:300px;
+    visibility: hidden;
+}
+
+#moveAble9{
+top:150px;
+left:325px;
+    visibility: hidden;
+}
+
+#moveAble10{
+top:150px;
+left:350px;
+  visibility: hidden;
+}
+
+
+
+
+#start{
+    
+    float:right;
+}
+
+body{
+    
+    
+}
+
+
+#startNode{
+float:left;
+    margin-left: 5px;
+
+}
+
+.node{
+    width:25px;
+    height:25px;  
+    position: absolute;
+    background-color: chocolate;
+    border-radius: 12px;
+        text-align: center;
+vertical-align: middle;
+line-height: 25px;
+    color:white;
+}
+#node1{
+    left:150px;
+    top: 150px;
+}
+
+#node2{
+    left:150px;
+    top: 200px;
+}
+#node3{
+    left:150px;
+    top: 250px;
+}
+#node4{
+    left:150px;
+    top: 300px;
+}
+#node5{
+    left:200px;
+    top: 275px;
+}
+#node6{
+    left:250px;
+    top: 300px;
+}
+#node7{
+    left:200px;
+    top: 175px;
+}
+#node8{
+    left:250px;
+    top: 200px;
+}
+#node9{
+    left:300px;
+    top: 350px;
+}
+#node10{
+    left:150px;
+    top: 350px;
+}
+#node11{
+    left:100px;
+    top: 250px;
+}
+#node12{
+    left:50px;
+    top: 300px;
+}
+#node13{
+    left:300px;
+    top: 300px;
+}
+
+.verticalEdge{
+    position:absolute;
+    width:3px;
+    height:25px;
+    background: black;
+}
+#edge1{
+   top:175px;
+    left:160px;
+}
+#edge2{
+   top:225px;
+    left:160px;
+}
+#edge3{
+   top:275px;
+    left:160px;
+}
+#edge4{
+   top:325px;
+    left:160px;
+}
+#edge5{
+   top:325px;
+    left:310px;
+}
+
+.diagonalEdge{
+    position: absolute;
+    
+    width:3px;
+    height:33px;
+    background: black;
+    transform: rotate(-55deg);
+}
+
+#dEdge1{
+    top:156px;
+    left:186px;    
+}
+#dEdge2{
+    top:260px;
+    left:186px;    
+}
+
+#dEdge3{
+    top:185px;
+    left:235px;    
+}
+#dEdge4{
+    top:285px;
+    left:235px;    
+}
+#horizontalEdge{
+    position: absolute;
+    width:25px;
+    height: 3px;
+    background: black;
+    top:310px;
+    left:275px;
+}
+.diagonalEdgeLong{
+    position: absolute;
+    width:3px;
+    height:45px;
+    background: black;
+}
+#dEdgeL1{
+   top:215px;
+    left:135px;
+    transform: rotate(45deg);
+    
+}
+
+#dEdgeL2{
+   top:265px;
+    left:85px;
+    transform: rotate(45deg);
+    
+}
+#dEdgeL3{
+    top:315px;
+    left:285px;
+    transform: rotate(-45deg);
+}
+#horizontalEdgeLong{
+    position: absolute;
+    width:125px;
+    height:3px;
+    background: black;
+    top:360px;
+    left:175px;
+}
+#verticalEdgeLong{
+    position: absolute;
+    width:3px;
+    height:75px;
+    background: black;
+   top:200px;
+    left:210px;
+}
+
+#edge58{
+    position: absolute;
+    width:3px;
+    height: 65px;
+    background: black;
+     transform: rotate(35deg);
+    top:218px;
+    left:237px;
+}
+
+
+.wrapperHome{
+    
+    width:800px;
+    height:800px;
+    background: ;
+  /*  background-image: url(../imgs/lg.jpg) ;
+     background-size: cover;*/
+    margin-left:20%;
+
+}
+
+#buttonHome{
+    float:right;
+    width: auto;
+    padding: 5px;
+    margin-right: 5px;
+}
+#buttonHome:hover{
+    color:white;
+    background:#FFD422;
+    cursor:pointer;
+}
+
+#buttonHome2, #menuButton{
+    float:left;
+    width: 94%;
+    padding: 5px;
+    margin-right: 5px;
+    background-color: #04B45F;
+    text-decoration: none;
+    color:white;
+    
+    
+    font-weight: 800;
+    font-size: 18px;
+}
+#buttonHome2:hover, #menuButton:hover{
+    color:#2B5BE1;
+    background:#FFD422;
+    cursor:pointer;
+    border:1px solid black;
+    
+}
+
+
+.homeMenu{
+    float: left;
+    width:100%;
+    height:30px;
+    padding-top: 0px;
+    background: #BEF781;
+    
+}
+
+.menu2{
+    
+    float:left;
+    width:200px;
+    height:100%;
+    background: #CEFFE7;
+}
+
+#greetings{
+    margin-top: 5px;
+    margin-right: 5px;
+    display: block;
+    float:right;
+    width: auto;
+    height: auto;
+   /* background: red;*/
+    color:blue;
+    
+}
+
+.homeContent{
+    float:left;
+    width:600px;
+    height:100%;
+    background: #EFF5FB;
+}
+.logo{
+    
+    font-weight: 800;
+    font-size: 30px;
+    font-family: monospace;
+    color:#667192;
+    margin-left: 10%;
+    
+}
+#img1, #img2{
+    float:left;
+    width:250px;
+    height:240px;
+    margin-left: 20px;
+}
+#img1{
+background-image: url(../imgs/sort.png);
+    background-size: contain;
+}
+
+#img2{
+background-image: url(../imgs/traversing.png);
+       background-size: contain;
+}
+
+#frame{
+   width:600px;
+    height:100%;
+    border:0px;
+}
+
+.dropbtn{
+    float: left;
+    background-color: #FFBF00;
+    line-height: 20px;
+    padding: 2px;
+    border-radius: 6px;
+	width: auto;
+    height: auto;
+    font-size: 14px;
+    font-weight: 800;
+    color:blue;
+}
+.dropbtn:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #FFD500;
+}
+
+.dropdown {
+    margin: 2px 5px 0px 0px;
+   float:right;
+   /* background: red;*/
+}
+
+.dropdown-content {
+    margin-top:24px;
+    display: none;
+    position: absolute;
+    width:115px;
+    background-color: #CEFFE7;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#menuButton{
+    width: 110px;
+}
+
+table, td, th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+background-color: #BEF781;
+    font-weight: bold;
+    font-size: 14px;
+    color:#4a89dc;
+}
+
+body{
+    
+}
+
+

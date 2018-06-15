@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/stylet.css">
+<title>
+    Algorithm animation
+</title>    
+</head>
+    
+<body>
+      <style>
+          
+
+
+</style> 
+    
+<div class ="wrapperHome">
+    
+   
+    <div class="homeMenu">
+    
+    <div class="dropdown" >
+        <a class="dropbtn">Меню</a>
+        <div class="dropdown-content" >
+        <a href="register.html" id="menuButton">регистрация</a>
+        <a href="index.html" id=menuButton>вход</a>
+        <a href="logout.php" id=menuButton>изход</a>
+        </div>
+    </div>   
+        <p id="greetings"></p>
+          
+    </div>
+    
+
+    <div class="menu2">
+     <a id="buttonHome2"  onclick="forwardTo('sorting.php')">SORTING</a>
+    <a id="buttonHome2" onclick="forwardTo('traversing.php')"> TRAVERSING </a>
+     <a id="buttonHome2" onclick="forwardTo('history.php')"> LAST ANIMATIONS </a>
+    </div>
+    
+    <div class="homeContent">
+        
+     <iframe id="frame" src="samplepage.html"></iframe>
+        
+    </div>
+    
+    
+    
+</div>
+    
+ <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js">
+</script>
+<script>
+
+    $.ajax({
+      url: "getUsername.php",  
+      success: function(data) { /*console.log(data);*/
+          if(data != "")
+        document.getElementById("greetings").textContent="Добре дошъл, " + data +" !";
+
+      }
+   });
+   
+    
+      function forwardTo(page){
+          $.ajax({
+      url: "islogged.php",
+      type: "GET",
+      success: function(data) { 
+          console.log(data);
+          if(data == 0)  window.location.href = "index.html"; 
+          else {console.log("in else");
+                 var iframe = $('#frame');
+                iframe.attr('src', page);
+          }
+      }
+   });
+        
+    }
+
+    
+</script>
+          
+    
+</body>
+
+</html>
